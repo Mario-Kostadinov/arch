@@ -1,1 +1,3 @@
 include keybindings.conf
+include workspaces.conf
+include layouts.conf
