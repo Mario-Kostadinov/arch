@@ -1,0 +1,10 @@
+include ~/projects/arch/desktop/wayland/compositors/sway/config/variables
+include ~/projects/arch/desktop/wayland/compositors/sway/config/keybindings
+include ~/projects/arch/desktop/wayland/compositors/sway/config/workspaces
+include ~/projects/arch/desktop/wayland/compositors/sway/config/layouts
+include ~/projects/arch/desktop/wayland/compositors/sway/config/scratchpad
+include ~/projects/arch/desktop/wayland/compositors/sway/config/modes
+include ~/projects/arch/desktop/wayland/compositors/sway/config/bar
+include ~/projects/arch/desktop/wayland/compositors/sway/config/input
+include ~/projects/arch/desktop/wayland/compositors/sway/config/monitors
+include /etc/sway/config.d/*
