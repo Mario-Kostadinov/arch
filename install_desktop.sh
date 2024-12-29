@@ -3,6 +3,7 @@ source .env
 source ./utility/install_package.sh
 source ./utility/install_package_aur.sh
 source ./utility/log.sh
+
 source ./desktop/sound/setup_sound.sh
 
 logs() {
@@ -16,10 +17,14 @@ sound() {
     log_to_screen "---Sound setup end---"
 }
 
+setup_all() {
+    sound
+}
+
 main() {
  logs
  log_to_screen "---Starting Desktop Install---"
- sound
+ #setup_all 
  log_to_screen "Installation finished"
 }
 

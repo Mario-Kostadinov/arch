@@ -1,1 +1,13 @@
 * My Arch System
+* Sound
+For sound PipeWire was chosen as the modern solution for both audio and video capture and playback.
+
+[[file:desktop/sound/setup_sound.sh][Setup script for sound]]
+
+** Packages
+- pipewire
+- wireplumber
+- pipewire-pulse
+- pipewire-audio
+- pipewire-alsa
+- easyeffects
