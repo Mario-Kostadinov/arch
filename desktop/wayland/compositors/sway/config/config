@@ -1,3 +1,9 @@
+include variables.conf
 include keybindings.conf
 include workspaces.conf
 include layouts.conf
+include scratchpad.conf
+include modes.conf
+include input.conf
+
+include /etc/sway/config.d/*
