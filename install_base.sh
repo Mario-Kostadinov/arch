@@ -9,8 +9,12 @@ source ./base/disk/mount_partitions.sh
 source ./base/disk/generate_fstab.sh
 #source ./base/disk/encryption.sh
 
-source ./base/network/setup_network.sh
+source ./base/users/add_normal_user.sh
+source ./base/users/update_sudo_user_passwd.sh
 
+source ./base/network/setup_network.sh
+source ./base/localisation/setup_localisation.sh
+source ./base/time/setup_time.sh
 source ./base/packages.sh
 
 base_installation() {
@@ -22,10 +26,10 @@ base_installation() {
 
 chroot_installation() {
     setup_network
-}
-
-desktop_installation() {
-
+    setup_localisation
+    add_normal_user
+    update_sudo_user_passwd
+    setup_time
 }
 
 main() {

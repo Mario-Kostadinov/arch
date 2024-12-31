@@ -1,7 +1,8 @@
-* My Arch System
-* Todoes [0/2] 
+ My Arch System
+* Todoes [0/3] 
 ** TODO Determine Microde based on env variable
 ** TODO Setup Encryption 
+** TODO Setup localisation to be determined by an env variable 
 * Sound
 For sound PipeWire was chosen as the modern solution for both audio and video capture and playback.
 
