@@ -11,10 +11,16 @@ source ./base/disk/generate_fstab.sh
 
 source ./base/users/add_normal_user.sh
 source ./base/users/update_sudo_user_passwd.sh
+source ./base/users/add_wheel_group_to_sudoers.sh
+
+source ./base/bootloader/grub/setup_grub.sh
 
 source ./base/network/setup_network.sh
+
 source ./base/localisation/setup_localisation.sh
+
 source ./base/time/setup_time.sh
+
 source ./base/packages.sh
 
 base_installation() {
@@ -29,7 +35,11 @@ chroot_installation() {
     setup_localisation
     add_normal_user
     update_sudo_user_passwd
+    add_wheel_group_to_sudoers
     setup_time
+    
+    mkinitcpio -P
+    setup_grub
 }
 
 main() {
