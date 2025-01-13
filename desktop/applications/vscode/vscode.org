@@ -1,0 +1,48 @@
+
+settings.json
+#+begin_src shell
+{
+  "breadcrumbs.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-l>"],
+      "after": ["z", "z"]
+    }
+  ],
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+
+#+end_src
+
+keybindings.json
+#+begin_src shell
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+  },
+  {
+    "key": "ctrl+x s",
+    "command": "workbench.action.files.save",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "actions.find"
+  }
+]
+
+#+end_src
