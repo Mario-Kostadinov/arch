@@ -1,0 +1,9 @@
+
+* Todoes
+
+** TODO Figure out screen sharing on wayland
+Currently I have this that works but need to read on why
+
+#+begin_src shell
+sudo pacman -S pipewire xdg-desktop-portal xdg-desktop-portal-wlr
+#+end_src
