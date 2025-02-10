@@ -15,3 +15,8 @@ For sound PipeWire was chosen as the modern solution for both audio and video ca
 - pipewire-audio
 - pipewire-alsa
 - easyeffects
+- 
+** Fix for low sound
+#+begin_src emacs-lisp
+- wpctl set-volume @DEFAULT_AUDIO_SINK@ 1.0
+#+end_src

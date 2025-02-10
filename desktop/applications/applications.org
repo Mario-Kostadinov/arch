@@ -1,0 +1,7 @@
+
+
+* Docker Setup
+This article helps with adding user to docker group
+https://stackoverflow.com/questions/48957195/how-to-fix-docker-got-permission-denied-issue
+
+** TODO Script to add user to docker group

@@ -8,11 +8,13 @@ bindsym $mod+y exec kitty
 bindsym $mod+Shift+Return exec emacsclient -c -a ""
 # Kill focused window
 bindsym $mod+q kill
-bindsym $mod+d exec google-chrome-stable --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
+bindsym $mod+u exec google-chrome-stable --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto
 bindsym $mod+Shift+r exec ~/mos/dist/scripts/config/work_repos_wofi.sh start
 bindsym $mod+c exec ~/mos/dist/scripts/config/wofi_app_switcher.sh
 bindsym $mod+space exec swaymsg input "type:keyboard" xkb_switch_layout next 
-bindsym $mod+Shift+d exec $menu
+bindsym $mod+Shift+e exec $menu
+bindsym $mod+t exec emacsclient -c -e "(satori-consult-rg-popup)"
+
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
 # Despite the name, also works for non-floating windows.

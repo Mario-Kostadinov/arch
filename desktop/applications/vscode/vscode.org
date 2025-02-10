@@ -27,12 +27,16 @@ settings.json
 
 keybindings.json
 #+begin_src shell
-// Place your key bindings in this file to override the defaults
+   // Place your key bindings in this file to override the defaults
 [
+//  {
+//    "key": "ctrl+p",
+//    "command": "-extension.vim_ctrl+p",
+//    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+//  },
   {
-    "key": "ctrl+p",
-    "command": "-extension.vim_ctrl+p",
-    "when": "editorTextFocus && vim.active && vim.use<C-p> && !inDebugRepl || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-p> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
+    "key": "ctrl+x p f",
+    "command": "workbench.action.quickOpen"
   },
   {
     "key": "ctrl+x s",
@@ -42,7 +46,12 @@ keybindings.json
   {
     "key": "ctrl+s",
     "command": "actions.find"
-  }
+  },
+  {
+    "key": "alt+e",
+    "command": "emacs-mcx.commandName", // Replace with the desired Emacs command
+    "when": "editorTextFocus"
+}
 ]
 
 #+end_src

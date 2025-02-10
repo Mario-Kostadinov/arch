@@ -1,4 +1,2 @@
-output HDMI-A-2 pos 0 0 res 2560x1440@143.856Hz
+output HDMI-A-2 pos 0 0 res 2560x1440@144Hz
 output HDMI-A-1 disable
-
-
