@@ -8,3 +8,12 @@ include ~/projects/arch/desktop/wayland/compositors/sway/config/bar
 include ~/projects/arch/desktop/wayland/compositors/sway/config/input
 include ~/projects/arch/desktop/wayland/compositors/sway/config/monitors
 include /etc/sway/config.d/*
+
+
+
+default_border none
+default_floating_border none
+font pango:monospace 0.001
+titlebar_padding 1
+titlebar_border_thickness 0
+
